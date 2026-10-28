@@ -1,0 +1,3 @@
+# Analysis Question
+
+The linked-list stack pushes and pops at the head because the head can be updated directly, making both operations O(1), or constant time. If the stack removed an item from the tail of a singly linked list, it would need to travel through the list to find the node before the tail, making the operation O(n). The array queue must be circular so that positions freed by dequeue operations can be reused. By wrapping the front and rear indexes back to the beginning of the array, the queue avoids wasting empty spaces and does not need to shift all the elements after each dequeue.
